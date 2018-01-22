@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Effective JavaScript: Frogger</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jQuery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+</head>
+<body>
+	<header>
+    	<h3>CLASSIC ARCADE GAME</h3>
+    	<h6>SCORE&nbsp;<span id="score">0</span></h6>
+    	<div><span id="lives"></span> Lives Remaining</div>
+    	<div>You Have to Get 1000 Points in <span id="time">00:35</span> Seconds!</div>
+    </header>
+
+    <script src="js/resources.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/engine.js"></script>
+
+    <!-- Modal You Win-->
+    <div class="modal fade" id="wonModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title" id="myModalLabel">You Win!</h1>
+            </div>
+            <div class="modal-body">
+            	<img src="images/you_win.gif" alt="You Win">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default btn-lg restart" data-dismiss="modal">Play Again!</button>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <!-- Modal End Game-->
+    <div class="modal fade" id="gameOverModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title" id="myModalLabel">Game Over</h1>
+            </div>
+            <div class="modal-body">
+            	<img id="game-over-img" src="images/GO1.png" alt="Game Over">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default btn-lg restart" data-dismiss="modal">Restart</button>
+            </div>
+          </div>
+        </div>
+    </div>
+</body>
+</html>

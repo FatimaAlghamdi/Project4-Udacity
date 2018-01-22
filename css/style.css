@@ -1,0 +1,43 @@
+body {
+    text-align: center;
+    background-color: #f1e8e8;
+    font-family: 'Press Start 2P', cursive;
+}
+
+
+h3 {
+    display: block;
+    -webkit-margin-before: 4em;
+    -webkit-margin-after: 2em;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    font-weight: bold;
+    color: #2e2a25;
+    font-size: 2em;
+}
+
+
+h6 {
+    font-weight: bold;
+    color: #2e2a25;
+    font-size: 1.33em;
+    margin-bottom: 14px;
+    padding-bottom: 0;
+}
+
+
+div {
+	font-size: 17px;
+  	font-family: 'Press Start 2P', cursive;
+  	margin-top: 35px;
+}
+
+
+.modal-footer {
+	text-align: center;
+}
+
+
+#game-over-img {
+	max-width: 400px;
+}
